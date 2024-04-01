@@ -19,8 +19,6 @@ from torch import nn
 import re
 
 import os
-from tokenizer.chatglm3.tokenization_chatglm import ChatGLMTokenizer
-from tokenizer.babyllemma.tokenizer_babyllemma import BALTokenizer
 from tokenizer.qwen72B.tokenization_qwen import QWenTokenizer
 
 from tqdm import tqdm
@@ -29,10 +27,6 @@ from openai import OpenAI
 import dotenv
 
 dotenv.load_dotenv()
-# openai = OpenAI(
-#     base_url = "https://agent-api.blankenschool.com/v1",
-#     api_key = os.getenv("OPENAI_API_KEY"),
-# )
 
 @dataclass
 class ModelArgs:
