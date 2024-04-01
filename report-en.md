@@ -1,6 +1,6 @@
 <div align="center">
 <h1>
-  MiniMATH
+  MiniMATH Report
 </h1>
 </div>
 
