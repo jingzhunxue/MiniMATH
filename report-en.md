@@ -6,7 +6,7 @@
 
 <h4 align="center">
     <p>
-        <a href="https://github.com/OpenBMB/MiniCPM/blob/main/report.md">中文</a> | <b>English</b>
+        <a href="https://github.com/jzx-ai-lab/MiniMATH/blob/main/report.md">中文</a> | <b>English</b>
     <p>
 </h4>
 
@@ -65,7 +65,7 @@ The training regimen of MiniMATH utilized a deduplicated token collection amount
 - #### 3.1 Data Composition
     In the initial stage, textual data predominantly sourced from several high-quality open-source datasets were employed, totaling 9.2 billion tokens. This stage underwent training for one epoch. The English language data primarily derived from the tiny_strange_text_book, a product of the phi series works, while the Chinese language content was chiefly sourced from the Chinese News section of wanjuan-1.0.
     
-    ![](https://github.com/jzx-ai-lab/MiniMATH/blob/main/assets/img/stage-1-data.png)
+    ![](https://github.com/jzx-ai-lab/MiniMATH/blob/main/assets/img/stage-1-data-en.png)
 - #### 3.2 Training Parameters and Loss Variation
     During the foundational training stage, a fixed learning rate of 2e-4 and a batch size of 163,840 were adopted. The rationale behind selecting a relatively smaller batch size for this stage stems from its conceptualization as a form of weight initialization process. A smaller batch size is thought to introduce a greater degree of variability to the initial weights, thereby better preparing the model for subsequent tasks.
 
@@ -78,7 +78,7 @@ The training regimen of MiniMATH utilized a deduplicated token collection amount
 
     During the second stage, the entirety of the data from the first stage was retained. Subsequently, a cleaning process was undertaken on selected high-quality mathematical texts from sources such as Mathpile and Wikipedia, amounting to 0.899 billion. This resulted in an accumulated dataset of 10.12 billion, upon which training was conducted for one epoch.
     
-    ![](https://github.com/jzx-ai-lab/MiniMATH/blob/main/assets/img/stage-2-data.png)
+    ![](https://github.com/jzx-ai-lab/MiniMATH/blob/main/assets/img/stage-2-data-en.png)
 
 - #### 4.2 Training Parameters and Loss Variation
 
@@ -91,7 +91,7 @@ The training regimen of MiniMATH utilized a deduplicated token collection amount
 
     In the third stage, while retaining a certain amount of data from stages 1 and 2, a substantial volume of math-related question data, amounting to 3.45 billion (totaling 4.82 billion), was introduced. This included publicly available datasets such as Math23k and Ape210k, along with proprietary high-quality question data. For the majority of the open-source data, a Chain of Thought (COT) problem-solving process was constructed, thereby enhancing the small model's capability for extended logical reasoning. This stage involved training for one epoch.
     
-    ![](https://github.com/jzx-ai-lab/MiniMATH/blob/main/assets/img/stage-3-data.png)
+    ![](https://github.com/jzx-ai-lab/MiniMATH/blob/main/assets/img/stage-3-data-en.png)
 
 - #### 5.2 Training Parameters and Loss Variation
 
@@ -124,7 +124,7 @@ The training regimen of MiniMATH utilized a deduplicated token collection amount
 
     In the fourth stage, a partial selection of data from stages 1 and 2 was retained alongside the entirety of the data from stage 3. Additionally, a substantial volume of data pertaining to basic mathematical operations was incorporated. This included simple arithmetic operations (addition, subtraction, multiplication, and division), elementary linear equation solving processes, and basic mathematical question-and-answer data derived from the MNBVC project, as well as mathematical COT data amounting to 6.48B, culminating in a total of 11.3B. This stage underwent training over the course of two epochs.
     
-    ![](https://github.com/jzx-ai-lab/MiniMATH/blob/main/assets/img/stage-4-data.png)
+    ![](https://github.com/jzx-ai-lab/MiniMATH/blob/main/assets/img/stage-4-data-en.png)
 
 - #### 6.2 Training Parameters and Loss Variation
 
