@@ -43,6 +43,8 @@ The MiniMATH-1.5B-base model is a pre-trained model that has been developed base
 |Phi-1.5|-|-|-|42.87|40.2|-|-|-|150B 
 |Phi-2-2B|2.5B|23.37|24.18|52.66|57.16|3.5|43.39|30.35|1.4T
 |MiniCPM-2B|2.4B|51.13|51.07|53.46|53.83|10.24|67.5|43.83|~1T
+|GPT-3.5-Turbo|-|-|-|70.0|80.8|34.1|75.7|63.46|-|
+|GPT-4|-|-|-|86.4|92.0|52.9|87.5|77.46|-|
 |MiniMATH-1.5B|1.2B|41.64|42.70|29.13|43.34|14.5|60.04|39.29|58B
 
 ***The token count refers to the total number of tokens used for training.**
