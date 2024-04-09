@@ -13,7 +13,7 @@
 
 <p align="center">
 <a href="report.md" target="_blank">MiniMath 技术报告</a> | 
-<a href = "https://github.com/jzx-ai-lab/MiniMATH/blob/main/report.md"
+<a href = "https://www.modelscope.cn/models/jzx-ai-lab/MiniMATH/summary"
 target = "_blank">modelscope</a>
 
 MiniMATH-1.5B-base 是基于19B 精选的数学相关题目、文字、对话数据的预训练模型，在未经过SFT， DPO等流程，并且严格隔离了测试数据的前提下，在中文数学题目的逻辑推理上取得了较好的效果，且与对齐后的模型具有类似的对话、指令跟随能力。同时，模型训练过程中也未采用学习率调度等技术行为，仅使用了两阶段的batchsize调度及四阶段的数据配比调整，通过不同阶段的性能实验，验证了高质量、合理配比的数据对模型生成效果的重要性。
